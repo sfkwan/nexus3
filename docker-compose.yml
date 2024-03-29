@@ -6,4 +6,6 @@ services:
       - 8081:8081
     volumes:
       - ./nexus-data:/nexus-data
+    extra_hosts:
+      - "mbasit3.ftcwifi.com:192.169.3.1"
     restart: always
